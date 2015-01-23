@@ -13,8 +13,8 @@ if (process.env.SOURCE_IP && process.env.SOURCE_PORT) {
   contentBase = {
     target: format(
       'http://%s:%d/',
-      process.env.SOURCE_IP || '192.168.59.103',
-      process.env.SOURCE_PORT || 8000
+      process.env.SOURCE_IP,
+      process.env.SOURCE_PORT
     )
   };
 } else {
